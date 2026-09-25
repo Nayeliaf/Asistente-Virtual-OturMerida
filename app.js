@@ -470,10 +470,10 @@ function handleClientMessage(text) {
      */
 
     const personalPhrases = [
-        "como estas",
-        "como esta",
-        "que haces",
-        "donde estas",
+        "cómo estás",
+        "cómo está",
+        "qué haces",
+        "dónde estás",
         "cuando nos vemos",
         "nos vemos",
         "te extrano",
@@ -488,22 +488,22 @@ function handleClientMessage(text) {
         "novio",
         "esposa",
         "esposo",
-        "mi hermano",
-        "mi hermana",
-        "mi primo",
-        "mi prima",
-        "mi mama",
-        "mi papa",
-        "feliz cumpleanos",
+        "hermano",
+        "hermana",
+        "primo",
+        "prima",
+        "mamá",
+        "papá",
+        "papi",
         "feliz cumpleaños",
         "feliz navidad",
         "te llamo",
         "llamame",
         "llamame cuando",
-        "escribeme",
-        "escribeme cuando",
-        "hablamos despues",
-        "hablamos despues"
+        "escríbeme",
+        "escríbeme cuando",
+        "hablamos después",
+        "hablamos después"
     ];
 
     const hasPersonalPhrase =
