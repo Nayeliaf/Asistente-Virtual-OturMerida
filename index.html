@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Prototipo del asistente virtual de OturMérida"
+    >
+
+    <title>OturMérida · Asistente Virtual</title>
+
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- =====================================================
+             VISTA DEL CLIENTE
+        ====================================================== -->
+
+        <section class="phone">
+
+            <!-- ENCABEZADO TIPO WHATSAPP -->
+            <header class="wa-header">
+
+                <div class="avatar" aria-hidden="true">
+                    O
+                </div>
+
+                <div class="contact">
+
+                    <strong>
+                        OturMérida
+                    </strong>
+
+                    <span id="client-status">
+                        asistente virtual
+                    </span>
+
+                </div>
+
+                <div class="header-icons" aria-hidden="true">
+                    ⋮
+                </div>
+
+            </header>
+
+
+            <!-- =================================================
+                 ÁREA DEL CHAT
+            ================================================== -->
+
+            <div
+                id="client-chat"
+                class="chat"
+                aria-live="polite"
+            ></div>
+
+
+            <!-- =================================================
+                 BOTONES / OPCIONES RÁPIDAS
+            ================================================== -->
+
+            <div
+                id="client-quick"
+                class="quick"
+            ></div>
+
+
+            <!-- =================================================
+                 COMPOSITOR DE MENSAJES
+            ================================================== -->
+
+            <form
+                id="client-form"
+                class="composer"
+                autocomplete="off"
+            >
+
+                <input
+                    id="client-input"
+                    type="text"
+                    autocomplete="off"
+                    placeholder="Escribe un mensaje..."
+                    aria-label="Escribe un mensaje"
+                >
+
+                <button
+                    type="submit"
+                    aria-label="Enviar mensaje"
+                    title="Enviar"
+                >
+                    ➤
+                </button>
+
+            </form>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PANEL DEL ENCARGADO
+        ====================================================== -->
+
+        <section class="admin">
+
+            <!-- ENCABEZADO DEL PANEL -->
+            <header class="admin-header">
+
+                <div class="admin-title">
+
+                    <small>
+                        OTURMÉRIDA
+                    </small>
+
+                    <h1>
+                        Panel del encargado
+                    </h1>
+
+                </div>
+
+                <button
+                    id="reset-demo"
+                    class="danger"
+                    type="button"
+                >
+                    Reiniciar demo
+                </button>
+
+            </header>
+
+
+            <!-- =================================================
+                 ESTADÍSTICAS
+            ================================================== -->
+
+            <div
+                id="admin-stats"
+                class="stats"
+            ></div>
+
+
+            <!-- =================================================
+                 CONTENIDO ADMINISTRATIVO
+            ================================================== -->
+
+            <div class="admin-layout">
+
+                <!-- LISTADO DE CONVERSACIONES -->
+                <aside class="admin-sidebar">
+
+                    <div class="search-wrapper">
+
+                        <input
+                            id="admin-filter"
+                            class="search"
+                            type="text"
+                            autocomplete="off"
+                            placeholder="Buscar conversación..."
+                            aria-label="Buscar conversación"
+                        >
+
+                    </div>
+
+                    <div
+                        id="admin-list"
+                        class="admin-list"
+                    ></div>
+
+                </aside>
+
+
+                <!-- DETALLE DE LA CONVERSACIÓN -->
+                <article
+                    id="admin-detail"
+                    class="detail"
+                >
+
+                    <div class="empty">
+
+                        <div class="empty-icon">
+                            💬
+                        </div>
+
+                        <h2>
+                            Selecciona una conversación
+                        </h2>
+
+                        <p>
+                            Aquí podrás consultar la información
+                            recopilada por el asistente y gestionar
+                            la atención del cliente.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         JAVASCRIPT PRINCIPAL
+    ========================================================== -->
+
+    <script src="./app.js"></script>
+
+</body>
+</html>
